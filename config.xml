@@ -65,5 +65,6 @@
     </platform>
     <gap:platform name="ios" />
     <gap:platform name="winphone" />
+    <gap:platform name="android">
 
 </widget>
