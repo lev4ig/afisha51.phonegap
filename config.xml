@@ -7,9 +7,6 @@
     <author email="northshining@hotmail.com" href="http://northshining.com">
         NorthShining
     </author>
-    <gap:platform name="ios" />
-    <gap:platform name="winphone" />
-    <gap:platform name="android">
     <content src="index.html" />
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
