@@ -34,9 +34,9 @@ var getFilmsList = function(day, that) {
     $(".side-bar-button-active").removeClass("side-bar-button-active");
     that.find(".sidebar-nav-button").addClass("side-bar-button-active");
     openPreloader(function() {
-        var getFilmsListLink = "getSiteHtml.php?whatNeed=now&siteUrl=http://vmurmanske.ru/%D0%9A%D0%B8%D0%BD%D0%BE/%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81  table.filmIndexTable";
+        var getFilmsListLink = "http://afisha51.northshining.xyz/getSiteHtml.php?whatNeed=now&siteUrl=http://vmurmanske.ru/%D0%9A%D0%B8%D0%BD%D0%BE/%D0%A1%D0%B5%D0%B9%D1%87%D0%B0%D1%81  table.filmIndexTable";
         if (day != mainApp.numOfListDays + 1) {
-            getFilmsListLink = "getSiteHtml.php?whatNeed=" + mainApp.listGetFullDate[day].dateForGet + "&siteUrl=http://vmurmanske.ru/%D0%9A%D0%B8%D0%BD%D0%BE/" + mainApp.listGetFullDate[day].dateForGet +
+            getFilmsListLink = "http://afisha51.northshining.xyz/getSiteHtml.php?whatNeed=" + mainApp.listGetFullDate[day].dateForGet + "&siteUrl=http://vmurmanske.ru/%D0%9A%D0%B8%D0%BD%D0%BE/" + mainApp.listGetFullDate[day].dateForGet +
                 " table.filmDateTable";
         };
         filmsListMake(day, getFilmsListLink);
@@ -162,9 +162,9 @@ var filmsLinkToPopup = function() {
         nameOfFilm = translite(nameOfFilm.replace(/ /g, ""));
         jQuery(this).removeAttr('href');
         if ($("div.list-date").text() === "Сейчас") {
-            jQuery(this).closest("div.filmIndexTable-film").attr('onClick', 'openFilmPopup("getSiteHtml.php?whatNeed=' + nameOfFilm + '&siteUrl=http://vmurmanske.ru' + linkToFilm + '");');
+            jQuery(this).closest("div.filmIndexTable-film").attr('onClick', 'openFilmPopup("http://afisha51.northshining.xyz/getSiteHtml.php?whatNeed=' + nameOfFilm + '&siteUrl=http://vmurmanske.ru' + linkToFilm + '");');
         } else {
-            jQuery(this).closest("tr").attr('onClick', 'openFilmPopup("getSiteHtml.php?whatNeed=' + nameOfFilm + '&siteUrl=http://vmurmanske.ru' + linkToFilm + '");');
+            jQuery(this).closest("tr").attr('onClick', 'openFilmPopup("http://afisha51.northshining.xyz/getSiteHtml.php?whatNeed=' + nameOfFilm + '&siteUrl=http://vmurmanske.ru' + linkToFilm + '");');
         }
 
     });
